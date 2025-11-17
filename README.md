@@ -9,7 +9,7 @@ class Bar extends StatefulWidget {
   State<Bar> createState() => _BarState();
 }
 
-class _BarState extends State<Line> {
+class _BarState extends State<Bar> {
     //property
     late Bar<DeveloperData> data;
     late TooltipBehavior tooltipBehavior;
