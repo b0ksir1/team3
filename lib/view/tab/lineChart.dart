@@ -1,5 +1,6 @@
-import 'package:team3/model/developer_data.dart';
+import 'package:chart_barchart_app/model/developer_data.dart';
 import 'package:flutter/material.dart';
+import 'package:syncfusion_flutter_charts/charts.dart';
 
 class LineChart extends StatefulWidget {
 
@@ -21,6 +22,7 @@ class _LineChartState extends State<LineChart> {
     super.initState();
     
     tooltipBehavior = TooltipBehavior(enable: true);
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -68,4 +70,4 @@ class _LineChartState extends State<LineChart> {
 
 
 
-} // class
+  }
