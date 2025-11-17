@@ -37,6 +37,7 @@ class _ScatterChartState extends State<ScatterChart> {
     return Scaffold(
       appBar: AppBar(
         title: Text('이광태'),
+        centerTitle: true,
       ),
       body: Center(
         child: SizedBox(
