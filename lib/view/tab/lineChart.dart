@@ -27,9 +27,10 @@ class _LineChartState extends State<LineChart> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      // appBar: AppBar(
-      //   title: Text('Bar Chart'),
-      // ),
+      appBar: AppBar(
+        title: Text('Line Chart'),
+        centerTitle: true,
+      ),
       body: Center(
         child: SizedBox(
           width: 380,
