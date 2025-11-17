@@ -27,6 +27,7 @@ class _BarChartState extends State<BarChart> {
     return Scaffold(
       appBar: AppBar(
         title: Text('Bar Chart'),
+        centerTitle: true,
       ),
       body: Center(
         child: SizedBox(
