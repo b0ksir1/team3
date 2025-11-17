@@ -36,7 +36,7 @@ class _ScatterChartState extends State<ScatterChart> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Line Chart'),
+        title: Text('이광태'),
       ),
       body: Center(
         child: SizedBox(
