@@ -1,8 +1,12 @@
-// import 'package:chart_Linechart_app/model/developer_data.dart';
-
 import 'package:chart_barchart_app/model/developer_data.dart';
 import 'package:flutter/material.dart';
 import 'package:syncfusion_flutter_charts/charts.dart';
+
+/*
+  Scatter chart 작업.
+  작업자: 이광태
+  Date: 2025.11.17
+*/
 
 class ScatterChart extends StatefulWidget {
   final List<DeveloperData> data;
