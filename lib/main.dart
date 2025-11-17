@@ -18,9 +18,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
       ),
       initialRoute: '/',
-      getPages: [
-        GetPage(name: '/', page: () => TabHome()),
-      ],
+      getPages: [GetPage(name: '/', page: () => TabHome())],
     );
   }
 }
