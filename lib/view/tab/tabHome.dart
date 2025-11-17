@@ -4,7 +4,6 @@ import 'package:chart_barchart_app/view/tab/lineChart.dart';
 import 'package:chart_barchart_app/view/tab/pieChart.dart';
 import 'package:chart_barchart_app/view/tab/scatterChart.dart';
 import 'package:flutter/material.dart';
-import 'package:get/get.dart';
 import 'package:syncfusion_flutter_charts/charts.dart';
 
 class TabHome extends StatefulWidget {

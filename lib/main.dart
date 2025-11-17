@@ -1,8 +1,3 @@
-
-import 'package:chart_barchart_app/view/tab/barChart.dart';
-import 'package:chart_barchart_app/view/tab/lineChart.dart';
-import 'package:chart_barchart_app/view/tab/pieChart.dart';
-import 'package:chart_barchart_app/view/tab/scatterChart.dart';
 import 'package:chart_barchart_app/view/tab/tabHome.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
