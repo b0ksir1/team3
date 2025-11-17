@@ -25,10 +25,6 @@ class MyApp extends StatelessWidget {
       initialRoute: '/',
       getPages: [
         GetPage(name: '/', page: () => TabHome()),
-        GetPage(name: '/bar', page: () => BarChart()),
-        GetPage(name: '/line', page: () => LineChart()),
-        GetPage(name: '/pie', page: () => PieChart()),
-        GetPage(name: '/sactter', page: () => ScatterChart()),
       ],
     );
   }
