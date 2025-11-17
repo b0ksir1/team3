@@ -28,7 +28,7 @@ class _LineChartState extends State<LineChart> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Line Chart'),
+        title: Text('김성도'),
         centerTitle: true,
       ),
       body: Center(

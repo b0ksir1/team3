@@ -24,8 +24,8 @@ class _PieChartState extends State<PieChart> {
   @override
   Widget build(BuildContext context) {
     return  Scaffold(
-      appBar: AppBar(
-        title: Text('Pie Chart'),
+      appBar: AppBar(                 
+        title: Text('고석민'),
         centerTitle: true,
       ),
       body: Center(
