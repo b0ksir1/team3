@@ -26,7 +26,7 @@ class _BarChartState extends State<BarChart> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Bar Chart'),
+        title: Text('정진석'),
         centerTitle: true,
       ),
       body: Center(
