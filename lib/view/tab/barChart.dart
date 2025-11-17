@@ -3,7 +3,8 @@ import 'package:flutter/material.dart';
 import 'package:syncfusion_flutter_charts/charts.dart';
 
 class BarChart extends StatefulWidget {
-  const BarChart({super.key});
+  final List<DeveloperData> data;
+  BarChart({super.key,required this.data});
 
   @override
   State<BarChart> createState() => _BarChartState();
@@ -11,24 +12,13 @@ class BarChart extends StatefulWidget {
 
 class _BarChartState extends State<BarChart> {
     //property
-    late List<DeveloperData> data;
     late TooltipBehavior tooltipBehavior;
 
     @override
   void initState() {
     super.initState();
-    data = [];
     tooltipBehavior = TooltipBehavior(enable: true);
-    addData();
   } //첫번째 이후 활용 안함
-
-  addData(){
-    data.add(DeveloperData(year: 2017, developers: 19000));
-    data.add(DeveloperData(year: 2018, developers: 40000));
-    data.add(DeveloperData(year: 2019, developers: 35000));
-    data.add(DeveloperData(year: 2020, developers: 37000));
-    data.add(DeveloperData(year: 2021, developers: 45000));
-  }
 
 
 
@@ -40,8 +30,8 @@ class _BarChartState extends State<BarChart> {
       ),
       body: Center(
         child: SizedBox(
-          width: 500,
-          height: 500,
+          width: 380,
+          height: 600,
           child: SfCartesianChart(
             title: ChartTitle(
               text: 'Yearly Growth in th Flutter Community\n\n  '
@@ -53,7 +43,7 @@ class _BarChartState extends State<BarChart> {
               // BarSeries : 가로축 막대 그래프
               BarSeries<DeveloperData, int>(
                 name: 'Site 수',
-                dataSource: data,
+                dataSource: widget.data,
                 xValueMapper: (DeveloperData developers, _) => developers.year, 
                 yValueMapper: (DeveloperData developers, _) => developers.developers,
                 dataLabelSettings: DataLabelSettings(isVisible: true),
